@@ -1,0 +1,293 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+
+    tools:context="com.example.mario5972.vacunate.GlosarioFragment">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Glosario de Vacunas"
+            android:layout_margin="10dp"
+            android:textSize="35sp"
+            android:textAlignment="center"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1"
+            >
+            <TableRow
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical" >
+                <TextView
+                    android:text="Vacuna"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="0"
+                    android:layout_height="60dp"
+                    android:background="@drawable/table_title"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Enfermedad que \nPreviene"
+                    android:textSize="20dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:layout_height="60dp"
+                    android:background="@drawable/table_title"
+                    android:textAlignment="center"
+
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="BCG"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="0"
+                    android:layout_height="45dp"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Tuberculosis"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:layout_height="45dp"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Hepatitis B"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="0"
+                    android:layout_height="45dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="HepatitisB"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:layout_height="45dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:text="Pentavalente\n Acelular \nDPaT + VPI + Hib"
+                    android:textSize="15dp"
+                    android:layout_column="0"
+                    android:layout_height="110dp"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Difteria, \nTos Ferina,  \nTétanos, \nPoliomelitis e \nInfecciones por \nH. influenzae b"
+                    android:textSize="15dp"
+                    android:layout_height="110dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:text="DPT"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:layout_height="56dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Difteria, \nTos Ferina y  \nTétanos"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:layout_height="56dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:text="Rotavirus"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:layout_height="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Diarrea por \n Rotavirus"
+                    android:textSize="20dp"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:text="Neumocócica \nConjugada"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:layout_height="51dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Infecciones por \nNeumococo"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:layout_height="51dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:text="Influenza"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Influenza"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:text="SRP"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:layout_height="60dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Sarampión, \nRubéola y \nParotiditis"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:layout_height="60dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:text="Sabin"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Poliomelitis"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cell_shape"
+                    android:textAlignment="center"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:text="SR"
+                    android:textSize="20dp"
+                    android:layout_column="0"
+                    android:layout_height="40dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+
+                    />
+                <TextView
+                    android:text="Sarampeón y \nRubéola"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_column="1"
+                    android:layout_height="40dp"
+                    android:background="@drawable/cell_shape2"
+                    android:textAlignment="center"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</FrameLayout>

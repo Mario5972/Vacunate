@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mario5972.vacunate.RegistroVacunasActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/side_nav_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/side_nav_bar"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text="Vacunas Aplicadas"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:stretchColumns="0,1,2,3">
+
+                <TableRow android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_column="0"
+                        android:background="@drawable/table_title"
+                        android:gravity="center_vertical"
+                        android:text="Vacuna"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_column="1"
+                        android:background="@drawable/table_title"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="Dosis"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_column="2"
+                        android:background="@drawable/table_title"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="Edad y \nFrecuencia"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_column="3"
+                        android:background="@drawable/table_title"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="Fecha de \nVacunación"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_height="45dp"
+                        android:layout_column="0"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_vertical"
+                        android:text="BCG"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_height="45dp"
+                        android:layout_column="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_vertical"
+                        android:text="Primera"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_height="45dp"
+                        android:layout_column="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_vertical"
+                        android:text="Al nacer"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/fecha_bcg"
+                        android:layout_height="45dp"
+                        android:layout_column="1"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_vertical"
+                        android:text="Ingrese Fecha"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:background="@drawable/cell_shape2"
+                        android:gravity="center_vertical"
+                        android:text="Hepatitis B"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Primera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Segunda"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Tercera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Al nacer"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="2 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="6 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:id="@+id/fecha_hepatitis_primera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_hepatitis_segunda"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_hepatitis_tercera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_vertical"
+                        android:text="Pentavalente"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Primera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Segunda"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Tercera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Cuarta"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="2 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="4 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="6 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="18 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:id="@+id/fecha_penta_primera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_penta_segunda"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_penta_tercera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_penta_cuarta"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_height="45dp"
+                        android:layout_column="0"
+                        android:background="@drawable/cell_shape2"
+                        android:gravity="center_vertical"
+                        android:text="DPT"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_height="45dp"
+                        android:layout_column="1"
+                        android:background="@drawable/cell_shape2"
+                        android:gravity="center_vertical"
+                        android:text="Primera"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_height="45dp"
+                        android:layout_column="1"
+                        android:background="@drawable/cell_shape2"
+                        android:gravity="center_vertical"
+                        android:text="Al nacer"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/fecha_dpt"
+                        android:layout_height="45dp"
+                        android:layout_column="1"
+                        android:background="@drawable/cell_shape2"
+                        android:gravity="center_vertical"
+                        android:text="Ingrese Fecha"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_vertical"
+                        android:text="Rotavirus"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Primera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Segunda"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Tercera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Al nacer"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="2 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="6 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:id="@+id/fecha_rota_primera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_rota_segunda"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_rota_tercera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:background="@drawable/cell_shape2"
+                        android:gravity="center_vertical"
+                        android:text="Neumocócica \nConjugada"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Primera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Segunda"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Tercera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Al nacer"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="2 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="6 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:id="@+id/fecha_neumo_primera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_neumo_segunda"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_neumo_tercera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_vertical"
+                        android:text="Influenza"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Primera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Segunda"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Tercera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Al nacer"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="2 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="6 Meses"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:id="@+id/fecha_influ_primera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_influ_segunda"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_influ_tercera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+                    </TableLayout>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:background="@drawable/cell_shape2"
+                        android:gravity="center_vertical"
+                        android:text="SRP"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Primera"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Refuerzo"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="1 Año"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="6 Años"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                    </TableLayout>
+
+                    <TableLayout>
+
+                        <TextView
+                            android:id="@+id/fecha_srp_primera"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/fecha_srp_segunda"
+                            android:layout_height="45dp"
+                            android:layout_column="1"
+                            android:background="@drawable/cell_shape2"
+                            android:gravity="center_vertical"
+                            android:text="Ingrese Fecha"
+                            android:textAlignment="center"
+                            android:textSize="15dp" />
+
+                    </TableLayout>
+
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
